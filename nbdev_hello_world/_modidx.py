@@ -6,4 +6,7 @@ d = { 'settings': { 'branch': 'main',
                 'git_url': 'https://github.com/MJBishop/nbdev-hello-world',
                 'lib_path': 'nbdev_hello_world'},
   'syms': { 'nbdev_hello_world.core': {'nbdev_hello_world.core.foo': ('core.html#foo', 'nbdev_hello_world/core.py')},
-            'nbdev_hello_world.tests.test_core': {}}}
+            'nbdev_hello_world.tests.test_core': { 'nbdev_hello_world.tests.test_core.TestNotebook': ( 'core.html#testnotebook',
+                                                                                                       'nbdev_hello_world/tests/test_core.py'),
+                                                   'nbdev_hello_world.tests.test_core.TestNotebook.test_foo': ( 'core.html#testnotebook.test_foo',
+                                                                                                                'nbdev_hello_world/tests/test_core.py')}}}
