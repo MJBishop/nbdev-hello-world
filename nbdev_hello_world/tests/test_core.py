@@ -12,4 +12,4 @@ import unittest
 class TestNotebook(unittest.TestCase):
     
     def test_foo(self):
-        pass
+        self.assertEqual(foo(), 'foobar')
