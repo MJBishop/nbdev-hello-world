@@ -13,3 +13,5 @@ class TestNotebook(unittest.TestCase):
     
     def test_foo(self):
         self.assertEqual(foo(), 'foobar')
+
+show_doc(TestNotebook.test_foo)
