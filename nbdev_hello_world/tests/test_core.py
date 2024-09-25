@@ -14,9 +14,26 @@ class TestCore(unittest.TestCase):
     def test_repo_string(self):
         self.assertEqual(repo_string(), 'nbdev_hello_world')
 
-    
-    # test module
+    # module
+    def test_filename(self):
+        self.assertEqual(filename_for_module('module', '05'), '05_module.ipynb')
 
+    def test_default_exp_string_for_module(self):
+        self.assertEqual(default_exp_string_for_module('module'), "#| default_exp module")
+
+    def test_default_test_class_string_for_module(self):
+        self.assertEqual(default_test_class_string_for_module('module'), "TestModule")
+
+    def test_format_module(self):
+        fname = f"03_module.ipynb"
+
+        format_module("module", "03")
+        with self.assertRaises(Exception):
+            with open(fname, 'r') as f:
+                pass
+    
+
+    # test module
     def test_filename_for_test_module(self):
         self.assertEqual(filename_for_test_module('module', '04'), '04_test_module.ipynb')
 
@@ -35,20 +52,4 @@ class TestCore(unittest.TestCase):
             with open(fname, 'r') as f:
                 pass
 
-    # module
-    def test_filename(self):
-        self.assertEqual(filename_for_module('module', '05'), '05_module.ipynb')
-
-    def test_default_exp_string_for_module(self):
-        self.assertEqual(default_exp_string_for_module('module'), "#| default_exp module")
-
-    def test_default_test_class_string_for_module(self):
-        self.assertEqual(default_test_class_string_for_module('module'), "TestModule")
-
-    def test_format_module(self):
-        fname = f"03_module.ipynb"
-
-        format_module("module", "03")
-        with self.assertRaises(Exception):
-            with open(fname, 'r') as f:
-                pass
+  

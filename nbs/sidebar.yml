@@ -1,0 +1,8 @@
+website:
+  sidebar:
+    contents:
+      - index.ipynb
+      - 00_test_core.ipynb
+      - 01_core.ipynb
+      - 02_test_module.ipynb
+      - 03_module.ipynb
