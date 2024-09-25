@@ -7,12 +7,12 @@ __all__ = ['repo_string', 'filename_for_test_module', 'test_module', 'default_ex
            'import_module_string_for_test_module', 'export_string', 'format_test_module', 'filename_for_module',
            'default_exp_string_for_module', 'default_test_class_string_for_module', 'format_module']
 
-# %% ../nbs/01_core.ipynb 3
+# %% ../nbs/01_core.ipynb 2
 import nbformat
 from nbformat.v4 import new_notebook, new_markdown_cell, new_code_cell
 
 
-# %% ../nbs/01_core.ipynb 4
+# %% ../nbs/01_core.ipynb 3
 from configparser import ConfigParser 
 
 def repo_string():
@@ -21,27 +21,27 @@ def repo_string():
     lib_path = configure.get('DEFAULT','lib_path')
     return lib_path
 
-# %% ../nbs/01_core.ipynb 5
+# %% ../nbs/01_core.ipynb 4
 def filename_for_test_module(module_name, index_str):
     return f"{index_str}_test_{module_name}.ipynb"
 
-# %% ../nbs/01_core.ipynb 6
+# %% ../nbs/01_core.ipynb 5
 def test_module(module_name):
     return f'tests/test_{module_name}'
 
-# %% ../nbs/01_core.ipynb 7
+# %% ../nbs/01_core.ipynb 6
 def default_exp_string_for_test_module(module_name):
     return f'#| default_exp {test_module(module_name)}'
 
-# %% ../nbs/01_core.ipynb 8
+# %% ../nbs/01_core.ipynb 7
 def import_module_string_for_test_module(repo_name, module_name):
     return f'from {repo_name}.{module_name} import *'
 
-# %% ../nbs/01_core.ipynb 9
+# %% ../nbs/01_core.ipynb 8
 def export_string():
     return "#| hide \nimport nbdev; nbdev.nbdev_export()"
 
-# %% ../nbs/01_core.ipynb 10
+# %% ../nbs/01_core.ipynb 9
 def format_test_module(module_name, index_str):
     fname = filename_for_test_module(module_name, index_str)
     repo_name = repo_string()
@@ -65,19 +65,19 @@ def format_test_module(module_name, index_str):
     with open(fname, 'w') as f:
         nbformat.write(nb, f)
 
-# %% ../nbs/01_core.ipynb 12
+# %% ../nbs/01_core.ipynb 11
 def filename_for_module(module_name, index_str):
     return f"{index_str}_{module_name}.ipynb"
 
-# %% ../nbs/01_core.ipynb 13
+# %% ../nbs/01_core.ipynb 12
 def default_exp_string_for_module(module_name):
     return f'#| default_exp {module_name}'
 
-# %% ../nbs/01_core.ipynb 14
+# %% ../nbs/01_core.ipynb 13
 def default_test_class_string_for_module(module_name):
     return f'Test{module_name.title()}'
 
-# %% ../nbs/01_core.ipynb 15
+# %% ../nbs/01_core.ipynb 14
 def format_module(module_name, index_str):
     fname = filename_for_module(module_name, index_str)
 

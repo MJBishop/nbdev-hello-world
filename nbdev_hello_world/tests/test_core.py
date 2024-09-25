@@ -6,7 +6,7 @@ __all__ = ['TestCore']
 # %% ../../nbs/00_test_core.ipynb 1
 from ..core import *
 
-# %% ../../nbs/01_core.ipynb 16
+# %% ../../nbs/01_core.ipynb 15
 import unittest
 
 class TestCore(unittest.TestCase):
