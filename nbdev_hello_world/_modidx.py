@@ -24,8 +24,4 @@ d = { 'settings': { 'branch': 'main',
                                                                                            'nbdev_hello_world/core.py'),
                                         'nbdev_hello_world.core.repo_string': ('core.html#repo_string', 'nbdev_hello_world/core.py'),
                                         'nbdev_hello_world.core.test_module': ('core.html#test_module', 'nbdev_hello_world/core.py')},
-            'nbdev_hello_world.tests.test_core': {},
-            'nbdev_hello_world.tests.test_module': { 'nbdev_hello_world.tests.test_module.TestModule': ( 'module.html#testmodule',
-                                                                                                         'nbdev_hello_world/tests/test_module.py'),
-                                                     'nbdev_hello_world.tests.test_module.TestModule.test_foo': ( 'module.html#testmodule.test_foo',
-                                                                                                                  'nbdev_hello_world/tests/test_module.py')}}}
+            'nbdev_hello_world.tests.test_core': {}}}
