@@ -17,7 +17,7 @@ from configparser import ConfigParser
 
 def repo_string():
     configure = ConfigParser() 
-    configure.read('../settings.ini') 
+    configure.read('settings.ini') 
     lib_path = configure.get('DEFAULT','lib_path')
     return lib_path
 
