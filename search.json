@@ -1,0 +1,52 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "nbdev-hello-world",
+    "section": "",
+    "text": "This file will become your README and also the index of your documentation.",
+    "crumbs": [
+      "nbdev-hello-world"
+    ]
+  },
+  {
+    "objectID": "index.html#developer-guide",
+    "href": "index.html#developer-guide",
+    "title": "nbdev-hello-world",
+    "section": "Developer Guide",
+    "text": "Developer Guide\nIf you are new to using nbdev here are some useful pointers to get you started.\n\nInstall nbdev_hello_world in Development mode\n# make sure nbdev_hello_world package is installed in development mode\n$ pip install -e .\n\n# make changes under nbs/ directory\n# ...\n\n# compile to have changes apply to nbdev_hello_world\n$ nbdev_prepare",
+    "crumbs": [
+      "nbdev-hello-world"
+    ]
+  },
+  {
+    "objectID": "index.html#usage",
+    "href": "index.html#usage",
+    "title": "nbdev-hello-world",
+    "section": "Usage",
+    "text": "Usage\n\nInstallation\nInstall latest from the GitHub repository:\n$ pip install git+https://github.com/MJBishop/nbdev-hello-world.git\nor from conda\n$ conda install -c MJBishop nbdev_hello_world\nor from pypi\n$ pip install nbdev_hello_world\n\n\nDocumentation\nDocumentation can be found hosted on this GitHub repository’s pages. Additionally you can find package manager specific guidelines on conda and pypi respectively.",
+    "crumbs": [
+      "nbdev-hello-world"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "nbdev-hello-world",
+    "section": "How to use",
+    "text": "How to use\nFill me in please! Don’t forget code examples:\n\n1+1\n\n2",
+    "crumbs": [
+      "nbdev-hello-world"
+    ]
+  },
+  {
+    "objectID": "core.html",
+    "href": "core.html",
+    "title": "core",
+    "section": "",
+    "text": "source\n\nrepo_string\n\n repo_string ()\n\n\nsource\n\n\nfilename_for_test_module\n\n filename_for_test_module (module_name, index_str)\n\n\nsource\n\n\ntest_module\n\n test_module (module_name)\n\n\nsource\n\n\ndefault_exp_string_for_test_module\n\n default_exp_string_for_test_module (module_name)\n\n\nsource\n\n\nimport_module_string_for_test_module\n\n import_module_string_for_test_module (repo_name, module_name)\n\n\nsource\n\n\nformat_test_module\n\n format_test_module (module_name, index_str)\n\nModule\n\nsource\n\n\nfilename_for_module\n\n filename_for_module (module_name, index_str)\n\n\nsource\n\n\ndefault_exp_string_for_module\n\n default_exp_string_for_module (module_name)\n\n\nsource\n\n\ndefault_test_class_string_for_module\n\n default_test_class_string_for_module (module_name)\n\n\nsource\n\n\nformat_module\n\n format_module (module_name, index_str)",
+    "crumbs": [
+      "core"
+    ]
+  }
+]
