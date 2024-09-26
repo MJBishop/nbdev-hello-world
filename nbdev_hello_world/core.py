@@ -4,7 +4,7 @@
 
 # %% auto 0
 __all__ = ['repo_string', 'filename_for_test_module', 'test_module', 'default_exp_string_for_test_module',
-           'import_module_string_for_test_module', 'export_string', 'format_test_module', 'filename_for_module',
+           'import_module_string_for_test_module', 'export_nbdev_string', 'format_test_module', 'filename_for_module',
            'default_exp_string_for_module', 'default_test_class_string_for_module', 'format_module']
 
 # %% ../nbs/01_core.ipynb 2
@@ -38,7 +38,7 @@ def import_module_string_for_test_module(repo_name, module_name):
     return f'from {repo_name}.{module_name} import *'
 
 # %% ../nbs/01_core.ipynb 8
-def export_string():
+def export_nbdev_string():
     return "#| hide \nimport nbdev; nbdev.nbdev_export()"
 
 # %% ../nbs/01_core.ipynb 9
@@ -57,7 +57,7 @@ def format_test_module(module_name, index_str):
     cell2 = new_code_cell(cell2_string)
     nb['cells'].append(cell2)
 
-    cell3 = new_code_cell(export_string())
+    cell3 = new_code_cell(export_nbdev_string())
     nb['cells'].append(cell3)
 
     # save the notebook to a file
@@ -111,7 +111,7 @@ def format_module(module_name, index_str):
     nb['cells'].append(cell4)
 
     
-    cell5 = new_code_cell(export_string())
+    cell5 = new_code_cell(export_nbdev_string())
     nb['cells'].append(cell5)
 
     # save the notebook to a file
