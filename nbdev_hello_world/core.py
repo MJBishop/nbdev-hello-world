@@ -63,6 +63,7 @@ def format_test_module(module_name, index_str):
 
     with open(fname, 'w') as f:
         nbformat.write(nb, f)
+        
 
 # %% ../nbs/01_core.ipynb 11
 def filename_for_module(module_name, index_str):
